@@ -1,7 +1,7 @@
 /* #region Base styles */
 body {
     font-family: Roboto, sans-serif;
-    color: #434445;
+    color: rgba(67, 68, 85, 1);
     background: rgba(255, 255, 255, 1);
 }
 
@@ -13,8 +13,9 @@ body {
 
 h2 {
     font-size: 36px;
-    line-height: 1.111;
-    letter-spacing: 0.02em;    
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;    
 }
 
 h3 {   
@@ -26,8 +27,9 @@ h3 {
 
 p {
     color: rgba(67, 68, 85, 1);
+    background: rgba(255, 255, 255, 1);
+    font-weight: 500;
     font-size: 16px;
-    font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
     text-align: left;
@@ -35,21 +37,34 @@ p {
 
 ul,
 ol {
-  list-style-type: none;
+    list-style-type: none;
 }
 
 a {
-  text-decoration: none;
-  color: currentColor;
+    color: rgba(67, 68, 85, 1);
+    text-decoration: none;
 }
 
 button {
-  font-family: inherit;
-  cursor: pointer;
+    font-family: inherit;
+    cursor: pointer;
 }
 
 address {
-  font-style: normal;
+    font-style: normal;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    overflow: hidden;
 }
 /* #endregion */
 
@@ -63,7 +78,7 @@ header {
     font-family: Raleway, sans-serif;
     font-size: 18px;
     font-weight: 700;
-    line-height: 1.167;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     text-decoration: none;
@@ -73,36 +88,29 @@ header {
     color: rgba(46, 47, 66, 1);
 }
 
-.link, .address-link {
-    color: rgba(46, 47, 66, 1);
+.header-address-list-link, .link, .address-link {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     text-align: left;
-    text-decoration: none;
-}
-
-.address-link {
-    font-weight: 400;
 }
 
 .nav-link {
     font-weight: 500;
 }
 
-.link:hover,
-.link:focus {
+.link:hover, .header-address-list-link:hover,
+.link:focus, .header-address-list-link:focus {
     color: rgba(64, 75, 191, 1);
 }
 
-.nav-link.link[href="#studio"]:active { 
+.nav-link.link[href="/index.html"]:active { 
     color: rgba(64, 75, 191, 1);
     text-decoration: underline;
     text-decoration-skip-ink: none;
 }
 /* #endregion */
-
 
 /* #region Hero */
 .hero {
@@ -112,7 +120,7 @@ header {
 .hero h1 {
     font-size: 56px;
     color: rgba(255, 255, 255, 1);
-    line-height: 1.071;
+    line-height: 1.07;
     letter-spacing: 0.02em;
 }
 
@@ -125,21 +133,33 @@ header {
     letter-spacing: 0.04em;
 }
 
-.btn:hover {
+.btn:hover, .btn:focus {
     background: rgba(64, 75, 191, 1);
 }
 /* #endregion */
 
+/* #region Basic principles section*/
+.principles-section h3 {
+    font-weight: 500;
+    text-align: left;
+}
+/* #endregion */
+
 /* #region Team section*/
-.team-section, .team-section ul {
+.team-section {
     background: rgba(244, 244, 253, 1);
+}
+
+.team-list-item {
+    background: rgba(255, 255, 255, 1);
 }
 
 .team-section h3 {
     background: rgba(255, 255, 255, 1);
+    font-weight: 500;
 }
 
-.team-section p {
+.team-section .section-list-item-text {
     text-align: center;
 }
 /* #endregion */
@@ -147,34 +167,27 @@ header {
 /* #region Portfolio section*/
 
 .portfolio-section {
-    background: rgba(255, 255, 255, 1);
+
 }
 
 .portfolio-section h3, .principles-section h3 {
+    font-weight: 500;
     text-align: left;
 }
 /* #endregion */
 
 /* #region Footer styles*/
-footer {
+.section-footer {
     background: rgba(46, 47, 66, 1);
 }
 
 .logo-footer {
     color: rgba(244, 244, 253, 1);
-    font-family: Raleway;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 21px;
-    letter-spacing: 0.03em;
 }
 
-footer p {
+.footer-text {
     color: rgba(244, 244, 253, 1);
-    font-family: Roboto;
-    font-size: 16px;
     font-weight: 400;
-    line-height: 1.5;
     letter-spacing: 0.02em;
 }
 /* #endregion */
