@@ -1,13 +1,12 @@
 /* #region Base styles */
 body {
     font-family: Roboto, sans-serif;
-    color: rgba(67, 68, 85, 1);
-    background: rgba(255, 255, 255, 1);
-}
+    color: #434455;
+    background: #FFFFFF;
 
 .section-title {
+    color: #2E2F42;
     font-weight: 700;
-    color: rgba(46, 47, 66, 1);
     text-align: center;
 }
 
@@ -26,7 +25,7 @@ h3 {
 }
 
 p {
-    color: rgba(67, 68, 85, 1);
+    color: #434455;
     background: rgba(255, 255, 255, 1);
     font-weight: 500;
     font-size: 16px;
@@ -41,92 +40,73 @@ ol {
 }
 
 a {
-    color: rgba(67, 68, 85, 1);
+    color: #434455; 
     text-decoration: none;
+    font-family: 'Roboto', sans-serif; 
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+a:hover,
+a:focus {
+    color: #404BBF;
 }
 
 button {
     font-family: inherit;
-    cursor: pointer;
 }
 
 address {
     font-style: normal;
 }
-
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    overflow: hidden;
-}
 /* #endregion */
 
 /* #region Header styles */
-header {
-    background: rgba(255, 255, 255, 1);
-}
-
 .logo {
-    color: rgba(77, 90, 229, 1);
+    color: #4D5AE5;
     font-family: Raleway, sans-serif;
     font-size: 18px;
     font-weight: 700;
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    text-decoration: none;
 }
 
 .logo-header {
-    color: rgba(46, 47, 66, 1);
+    color: #2E2F42;
 }
 
-.header-address-list-link, .link, .address-link {
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    text-align: left;
+.nav-list,
+.header-address-list {
+    list-style: none;
 }
 
 .nav-link {
     font-weight: 500;
 }
 
-.link:hover, .header-address-list-link:hover,
-.link:focus, .header-address-list-link:focus {
-    color: rgba(64, 75, 191, 1);
-}
-
-.nav-link.link[href="/index.html"]:active { 
-    color: rgba(64, 75, 191, 1);
-    text-decoration: underline;
-    text-decoration-skip-ink: none;
+.address-link {
+    font-weight: 400;
 }
 /* #endregion */
 
+
 /* #region Hero */
 .hero {
-    background: rgba(46, 47, 66, 1);
+    background: #2E2F42;
 }
 
 .hero h1 {
+    color: #FFFFFF;
     font-size: 56px;
-    color: rgba(255, 255, 255, 1);
     line-height: 1.07;
     letter-spacing: 0.02em;
 }
 
 .btn {
-    background: rgba(77, 90, 229, 1);
-    color: rgba(255, 255, 255, 1);
+    background: #4D5AE5;
+    color: #FFFFFF;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
@@ -134,28 +114,28 @@ header {
 }
 
 .btn:hover, .btn:focus {
-    background: rgba(64, 75, 191, 1);
+    background: #404BBF;
 }
 /* #endregion */
 
-/* #region Basic principles section*/
-.principles-section h3 {
+/* #region Basic principles section */
+.principles-section .section-title {
     font-weight: 500;
     text-align: left;
 }
 /* #endregion */
 
-/* #region Team section*/
+/* #region Team section */
 .team-section {
-    background: rgba(244, 244, 253, 1);
+    background: #F4F4FD; /
 }
 
 .team-list-item {
-    background: rgba(255, 255, 255, 1);
+    background: #FFFFFF;
 }
 
 .team-section h3 {
-    background: rgba(255, 255, 255, 1);
+    background: #FFFFFF;
     font-weight: 500;
 }
 
@@ -164,29 +144,24 @@ header {
 }
 /* #endregion */
 
-/* #region Portfolio section*/
-
-.portfolio-section {
-
-}
-
-.portfolio-section h3, .principles-section h3 {
+/* #region Portfolio section */
+.portfolio-section h3 {
     font-weight: 500;
     text-align: left;
 }
 /* #endregion */
 
-/* #region Footer styles*/
+/* #region Footer styles */
 .section-footer {
-    background: rgba(46, 47, 66, 1);
+    background: #2E2F42;
 }
 
 .logo-footer {
-    color: rgba(244, 244, 253, 1);
+    color: #F4F4FD;
 }
 
 .footer-text {
-    color: rgba(244, 244, 253, 1);
+    color: #F4F4FD;
     font-weight: 400;
     letter-spacing: 0.02em;
 }
